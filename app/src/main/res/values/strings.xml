@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InternshalaAssignement</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">849489957213-5eaj3ern1dnb3q07invnpm1hcebl19ov.apps.googleusercontent.com</string>
+    <string name="preference_name">com.kushal.notes</string>
+
+</resources>

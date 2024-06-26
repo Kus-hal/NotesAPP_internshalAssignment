@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomePage">
+
+    <fragment
+        android:id="@+id/welcomePage"
+        android:name="com.example.internshalaassignement.auth.WelcomePage"
+        android:label="fragment_welcome_page"
+        tools:layout="@layout/fragment_welcome_page" >
+
+        <action
+            android:id="@+id/action_welcomePage_to_notesHomeFragment"
+            app:destination="@id/notesHomeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/notesHomeFragment"
+        android:name="com.example.internshalaassignement.fragment.NotesHomeFragment"
+        android:label="fragment_notes_home"
+        tools:layout="@layout/fragment_notes_home" >
+        <action
+            android:id="@+id/action_notesHomeFragment_to_anyNoteDetailFragment"
+            app:destination="@id/anyNoteDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/anyNoteDetailFragment"
+        android:name="com.example.internshalaassignement.fragment.AnyNoteDetailFragment"
+        android:label="fragment_any_note_detail"
+        tools:layout="@layout/fragment_any_note_detail" />
+</navigation>
